@@ -1,19 +1,14 @@
 .header {
     width: 100%;
-    background-color: darkgray;
     padding: 30px 0;
     margin-bottom: 50px;
-}
-
-ul {
-    width: 100%;
     display: flex;
-    justify-content: center;
-    gap: 50px;
-    list-style: none;
+    justify-content: space-between;
 }
 
-li a{
-    text-decoration: none;
-    list-style: none;
+.header-title {
+    text-transform: uppercase;
+    font-size: 2em;
+    font-weight: 700;
+    cursor: default;
 }

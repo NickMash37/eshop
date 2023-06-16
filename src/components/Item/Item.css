@@ -1,12 +1,15 @@
 .item {
     text-decoration: none;
     color: #fff;
-    width: 320px;
+    width: 300px;
     height: 300px;
     background-color: rgb(36, 37, 41);
     border-radius: 15px;
     cursor: pointer;
     position: relative;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
 }
 
 .item:not(:last-child) {
@@ -15,11 +18,22 @@
 }
 
 .item-title {
-    font-size: 18px;
+    font-size: 22px;
     font-weight: 700;
     width: 100%;
+    display: block;
+    margin-top: 10px;
+    text-align: center;
 }
 
-.item-details {
-    padding: 10px 20px;
+.item-buy {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 10px auto 0;
+    align-items: center;
+}
+
+.item-buy button {
+    width: 100%;
 }
