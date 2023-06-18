@@ -12,3 +12,8 @@
     font-weight: 700;
     cursor: default;
 }
+
+.header-panel {
+    max-width: 150px;
+    align-items: center;
+}

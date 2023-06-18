@@ -5,7 +5,9 @@ export const Header = () => {
     return (
         <div className="header">
             <div className='header-title'>E-SHOP</div>
-            <Cart />
+            <div className='header-panel'>
+                <Cart />
+            </div>
         </div>
     )
 }
