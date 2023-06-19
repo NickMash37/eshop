@@ -1,12 +1,16 @@
-import { Cart } from './components/Cart/Cart';
-import { Header } from './components/header/Header';
+import { Route, Routes } from 'react-router-dom';
 import { HomePage } from './pages/HomePage/HomePage';
+import Main from './pages/MainPage/Main';
+
+
 function App() {
+
   return (
     <div className="App">
-      <Header />
-      <HomePage />
-      <Cart />
+        <Routes>
+          <Route path='/main' element={<Main />}/>
+          <Route path='/home' element={<HomePage />} />
+        </Routes>
     </div>
   )
 }

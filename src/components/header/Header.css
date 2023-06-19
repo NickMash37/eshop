@@ -12,3 +12,25 @@
     font-weight: 700;
     cursor: default;
 }
+
+.header-panel {
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logout-btn {
+    display: block;
+
+}
+
+.logout-btn button {
+    background-color: red;
+    padding: 5px 10px;
+    margin-left: 30px;
+}
+
+.hidden {
+    display: none;
+}
