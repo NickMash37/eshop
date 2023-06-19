@@ -9,7 +9,7 @@ export const Header = () => {
     const {email} = useAuth()
     return (
         <div className="header">
-            <div className='header-title'>E-SHOP</div>
+            <div className='header-title'><a href="/">E-SHOP</a></div>
             <div className='header-panel'>
                 <Cart />
                 <div className='logout-btn'>

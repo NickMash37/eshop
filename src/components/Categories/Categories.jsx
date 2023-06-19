@@ -1,16 +1,15 @@
-import { Item } from '../Item/Item';
 import './Categories.css';
+import { PRODUCTS } from '../../products';
 
-export const Categories = ({ products }) => {
-    const handleCategory = (event) => {
-        if (event.target.checked === true) {
-           return products = products.filter(product => <Item product={products} key={product.id}/>)
-        } else return
+export const Categories = ({ category, id }) => {
+    const handleCategory = () => {
+        console.log(PRODUCTS)
     }
     
     return (
         <div className='categories-main'>
-            <input type="checkbox" onChange={handleCategory}/>
+            <label htmlFor="materials">{category}</label>
+            <input type="checkbox" name='materials' onChange={handleCategory}/>
         </div>
     )
 }

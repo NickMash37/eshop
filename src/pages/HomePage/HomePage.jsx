@@ -2,6 +2,7 @@ import './HomePage.css';
 import { Item } from '../../components/Item/Item';
 import { useAuth } from '../../hooks/use-auth';
 import { useNavigate } from 'react-router';
+import { Categories } from '../../components/Categories/Categories';
 
 
 const PRODUCTS = [
@@ -10,6 +11,7 @@ const PRODUCTS = [
       name: "Гибкая черепица",
       price: 1000,
       img: "/images/img1.jpg",
+      category: 'Материалы'
     },
 
     {
@@ -125,14 +127,15 @@ const PRODUCTS = [
     }
   ];
 
+const CATEGORIES = ['Материалы', 'Инструменты']
+
 export const HomePage = () => {
     const navigate = useNavigate()
     const {isAuth} = useAuth()
 
-    console.log(isAuth)
-
     return isAuth ? (
         <div className='home-page'>
+            { CATEGORIES.map(category => <Categories category={category} key={category.id}/>) }
             { PRODUCTS.map(product => <Item product={product} key={product.id}/>) }
         </div>
     ) : navigate('/login')
