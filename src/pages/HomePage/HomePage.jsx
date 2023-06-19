@@ -1,5 +1,8 @@
 import './HomePage.css';
 import { Item } from '../../components/Item/Item';
+import { useAuth } from '../../hooks/use-auth';
+import { useNavigate } from 'react-router';
+
 
 const PRODUCTS = [
     {
@@ -121,11 +124,16 @@ const PRODUCTS = [
       img: '/images/img17.jpg'
     }
   ];
-export const HomePage = () => {
 
-    return (
+export const HomePage = () => {
+    const navigate = useNavigate()
+    const {isAuth} = useAuth()
+
+    console.log(isAuth)
+
+    return isAuth ? (
         <div className='home-page'>
             { PRODUCTS.map(product => <Item product={product} key={product.id}/>) }
         </div>
-    )
+    ) : navigate('/login')
 }

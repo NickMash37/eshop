@@ -21,3 +21,11 @@ input {
 input:active, input:focus {
     outline: 2px solid green;
 }
+
+.input-desc {
+    font-size: 10px;
+}
+
+.register-link {
+    color: tomato;
+}
