@@ -5,6 +5,7 @@ import {AiFillDelete} from 'react-icons/ai';
 
 export const CartItem = ({ title, key, id, price }) => {
     const dispatch = useDispatch();
+    console.log(price)
 
     const handleDeleteClick = () => {
         dispatch(deleteItemFromCart(id));

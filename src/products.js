@@ -12,13 +12,15 @@ export const PRODUCTS = [
     name: "ДВП",
     price: 1200,
     img: '/images/img2.jpg',
+    category: 'Материалы'
   },
 
   {
     id: 2,
     name: 'ДСП',
     price: 230,
-    img: '/images/img3.jpg'
+    img: '/images/img3.jpg',
+    category: 'Материалы'
   },
 
   {
