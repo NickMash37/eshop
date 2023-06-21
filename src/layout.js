@@ -4,8 +4,8 @@ import { Outlet } from 'react-router-dom';
 function Layout() {
     return (
         <div>
-            <main className='content'>
                 <Header />
+            <main className='content'>
                 <Outlet />
             </main>
         </div>

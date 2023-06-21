@@ -1,3 +1,4 @@
+import './Login.css';
 import {Form} from '../Form/Form';
 import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 import {useDispatch} from 'react-redux';
@@ -23,9 +24,11 @@ export const Login = () => {
   }
 
   return (
+    <div className='login'>
       <Form 
-        title="login"
+        title="Войти"
         handleClick={handleLogin}
       />
+    </div>
   )
 }

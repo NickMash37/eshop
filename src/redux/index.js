@@ -6,7 +6,7 @@ import userReducer from './user/userSlice';
 
 const rootReducer = combineReducers({
     cart: cartReducer,
-    user: userReducer
+    user: userReducer,
 });
 
 const persistConfig = {

@@ -26,6 +26,8 @@ export const SignUp = () => {
     
 
     return (
+      <div className='register'>
         <Form title="Зарегистрироваться" handleClick={handleRegister}/>
+      </div>
     )
 }

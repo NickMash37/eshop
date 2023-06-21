@@ -2,7 +2,7 @@ import "./Item.css";
 import { ItemBuy } from "../ItemBuy/ItemBuy";
 import { ItemImage } from "../ItemImage/ItemImage";
 
-export const Item = ({ product }) => {
+export const Item = ({product}) => {
   return (
     <div className="item">
       <div className="item-details">

@@ -1,8 +1,9 @@
 import './OrderPage.css';
-import { CartItem } from "../../components/CartItem/CartItem";
+import { CartItem } from '../../components/CartItem/CartItem';
 import { useSelector } from 'react-redux';
 
-export const OrderPage = () => {
+
+export const OrderPage = () => {   
     const items = useSelector(state => state.cart.itemsInCart)
 
     return (
@@ -11,7 +12,7 @@ export const OrderPage = () => {
                 items.map((product) => (
                     <div className="orders">
                     <CartItem
-                      key={product.name}
+                      key={product.id}
                       image={product.img}
                       price={product.price}
                       title={product.name}
@@ -19,7 +20,8 @@ export const OrderPage = () => {
                     />
                     </div>
                   ))
-            }
+                }
+            <a href="/home"><button className='back-btn'>Назад</button></a>
         </div>
     )
 }
